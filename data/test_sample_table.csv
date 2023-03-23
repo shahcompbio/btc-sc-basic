@@ -1,0 +1,5 @@
+sample,prefix,fastq_1,fastq_2
+GBM_PUB_10X_A,Brain_Tumor_3p_LT,/rsrch6/home/genomic_med/affaustino/scPipeline/data/gbm_10x/Brain_Tumor_3p_LT_fastqs/Brain_Tumor_3p_LT_S1_L001_R1_001.fastq.gz,/rsrch6/home/genomic_med/affaustino/scPipeline/data/gbm_10x/Brain_Tumor_3p_LT_fastqs/Brain_Tumor_3p_LT_S1_L001_R2_001.fastq.gz
+GBM_PUB_10X_B,Brain_Tumor_3p_LT,/rsrch6/home/genomic_med/affaustino/scPipeline/data/gbm_10x/Brain_Tumor_3p_LT_fastqs/Brain_Tumor_3p_LT_S1_L002_R1_001.fastq.gz,/rsrch6/home/genomic_med/affaustino/scPipeline/data/gbm_10x/Brain_Tumor_3p_LT_fastqs/Brain_Tumor_3p_LT_S1_L002_R2_001.fastq.gz
+GBM_PUB_10X_C,Brain_Tumor_3p_LT,/rsrch6/home/genomic_med/affaustino/scPipeline/data/gbm_10x/Brain_Tumor_3p_LT_fastqs/Brain_Tumor_3p_LT_S1_L003_R1_001.fastq.gz,/rsrch6/home/genomic_med/affaustino/scPipeline/data/gbm_10x/Brain_Tumor_3p_LT_fastqs/Brain_Tumor_3p_LT_S1_L003_R2_001.fastq.gz
+GBM_PUB_10X_D,Brain_Tumor_3p_LT,/rsrch6/home/genomic_med/affaustino/scPipeline/data/gbm_10x/Brain_Tumor_3p_LT_fastqs/Brain_Tumor_3p_LT_S1_L004_R1_001.fastq.gz,/rsrch6/home/genomic_med/affaustino/scPipeline/data/gbm_10x/Brain_Tumor_3p_LT_fastqs/Brain_Tumor_3p_LT_S1_L004_R2_001.fastq.gz
