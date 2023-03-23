@@ -48,7 +48,7 @@ process DOWNLOAD_HG_INDEX {
 process CUSTOM_REFERENCE {
     /* Description */
 
-    container 'oandrefonseca/scaligners:1.0'
+    container 'scaligners:1.0'
     label "Custom_Reference" 
 
     input:
@@ -85,7 +85,7 @@ process CUSTOM_REFERENCE {
 process SAMPLE_ALIGNMENT {
     /* Description */
 
-    container 'oandrefonseca/scaligners:1.0'
+    container 'scaligners:1.0'
     label "Sample_Alignment"
 
     tag "Processing ${sample_id}"
@@ -121,7 +121,7 @@ process SAMPLE_ALIGNMENT {
 process SAMPLE_CELL_QC {
     /* Description */
 
-    container 'oandrefonseca/scpackages:1.1'
+    container 'scpackages:1.1'
     label "Sample_and_Cell_QC"
 
     tag "QC ${sample_id}"
@@ -175,7 +175,7 @@ process SAMPLE_CELL_QC {
 process QUALITY_TABLE {
     /* Description */
 
-    container 'oandrefonseca/scpackages:1.1'
+    container 'scpackages:1.1'
     label "Quality_table"
     
     publishDir "${params.project_name}", mode: 'copyNoFollow'
@@ -214,7 +214,7 @@ process QUALITY_TABLE {
 process MERGE_AND_NORMALIZE {
     /* Description */
 
-    container 'oandrefonseca/scpackages:1.1' 
+    container 'scpackages:1.1' 
     label "Merge_and_Normalize"
 
     publishDir "${params.project_name}", mode: 'copyNoFollow'
@@ -253,7 +253,7 @@ process MERGE_AND_NORMALIZE {
 
 process BATCH_CORRECTION {
 
-    container 'oandrefonseca/scpackages:1.1' 
+    container 'scpackages:1.1' 
     label "Batch_Correction"
 
     publishDir "${params.project_name}", mode: 'copyNoFollow'
@@ -296,7 +296,7 @@ process BATCH_CORRECTION {
 
 process CELL_CLUSTERING {
   
-    container 'oandrefonseca/scpackages:1.1' 
+    container 'scpackages:1.1' 
     label "Cell_clustering"
 
     publishDir "${params.project_name}", mode: 'copyNoFollow'
