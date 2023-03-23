@@ -17,7 +17,10 @@ Project parameters:
 */
 
 process DOWNLOAD_HG_INDEX {
-    /* Downloading genome indexes from BTC Bucket */
+    /* 
+    Downloading genome indexes from BTC Bucket
+    https://storage.googleapis.com/btc-dshub-pipelines/scRNA/refData/GRCh38.tar 
+    */
     
     label "Download_Human_Indexes"
 
@@ -402,7 +405,7 @@ workflow {
     // Filter poor quality samples
     qc_approved_channel = SAMPLE_CELL_QC.out.status
     .filter{sample, object, status -> status.toString().endsWith('SUCCESS.txt')}
-    .map {sample, object, status -> object}
+    .map{sample, object, status -> object}
     .collect()
 
     qc_approved_channel
