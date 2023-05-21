@@ -377,6 +377,8 @@ workflow {
     // Samples channel
     samples_channel = Channel.fromPath(params.sample_csv)
                              .splitCsv(header:true)
+    
+    samples_channel.view()
 
     // Meta-data path
     meta_channel = Channel.fromPath(params.meta_data)

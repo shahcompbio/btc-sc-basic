@@ -1,4 +1,4 @@
-FROM r-base:4.2.2
+FROM rocker/r-ver:4.3.0
 LABEL maintainer="Andre Fonseca" \
     description="scPackages - Container with single-cell R dependencies"
 
@@ -53,8 +53,8 @@ ARG DEV_DEPS="c(\
     )"
 
 # Caching R-lib on the building process
-RUN --mount=type=cache,target=/usr/local/lib/R Rscript -e "install.packages(${R_DEPS}, clean=TRUE)"
-RUN --mount=type=cache,target=/usr/local/lib/R Rscript -e "BiocManager::install(${R_BIOC_DEPS})"
-RUN --mount=type=cache,target=/usr/local/lib/R Rscript -e "devtools::install_github(${DEV_DEPS})"
+RUN Rscript -e "install.packages(${R_DEPS}, clean=TRUE)"
+RUN Rscript -e "BiocManager::install(${R_BIOC_DEPS})"
+RUN Rscript -e "devtools::install_github(${DEV_DEPS})"
     
 CMD ["R"]
